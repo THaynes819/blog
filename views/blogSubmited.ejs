@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("header.ejs") %>
+    
+    <% if (locals.name) { %>
+        <div class="blog-content">
+            <h1>blog submission successful!</h1>
+            <p class="posted-blog"><%= name %></p>
+        </div>
+        <% } else{ %>
+                <h1>Error submiting blog</h1>
+            <% } %>
+    
+</body>
+<%- include("footer.ejs") %>
+</html>
